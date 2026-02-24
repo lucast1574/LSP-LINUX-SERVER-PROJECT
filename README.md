@@ -191,7 +191,7 @@ java -jar minecraft_server.jar --installServer
 
 # Si es Forge antiguo (<1.17)
 ```bash
-executable="./forge-1.12.2-14.23.5.2859-universal.jar"
+executable="./minecraft_server.jar"
 ```
 ```bash
 chmod +x forge-*.jar
