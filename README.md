@@ -187,7 +187,7 @@ Verifica que tu version de Forge, Fabric, Arclight, Mohist, Paper Purpur o Otros
 java -jar forge-1.20.1-47.3.0-installer.jar --installServer
 ```
 
-En la ruta: (config-lgsm/mcserver/mcserver.cfg)
+### En la ruta: (config-lgsm/mcserver/mcserver.cfg)
 
 # Si es Forge antiguo (<1.17)
 ```bash
@@ -215,7 +215,22 @@ chmod +x run.sh
 
 - Forge 1.12.2 -> Java 8.
 
+## Asignar mas Ram al servidor 
 
+En la ruta: (config-lgsm/mcserver/mcserver.cfg)
+```bash
+javaram="x"
+```
+
+x= Dos gigas menos de la ram que tienes en mb 1gb ram = 1000mb 
+### Ejemplo
+```bash
+javaram = "6000"
+```
+
+Si tienes 8gb de ram
+
+### ------------------
 ### AUTIO INICIO DEL SERVIDOR
 ```bash
 sudo bash -c 'cat <<EOF > /etc/systemd/system/minecraft-watchdog.service
