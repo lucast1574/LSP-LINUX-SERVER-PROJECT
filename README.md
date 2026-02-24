@@ -130,6 +130,11 @@ sudo systemctl restart playit
 sudo systemctl enable playit
 ```
 
+- Iniciar playit
+  
+```bash
+sudo systemctl start playit
+```
 ## Otra versiones
 
 - Regresar al paso antes de instalar
