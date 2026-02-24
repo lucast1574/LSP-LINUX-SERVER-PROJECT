@@ -239,14 +239,14 @@ After=network.target
 
 [Service]
 # Asegúrate de que el User coincida con el que creaste (ej. lsp-admin)
-User=lsp-admin
-Group=lsp-admin
-WorkingDirectory=/home/lsp-admin
+User=server
+Group=server
+WorkingDirectory=/home/server/minecraft
 Type=forking
 
 # Comandos específicos de LinuxGSM
-ExecStart=/home/lsp-admin/mcserver start
-ExecStop=/home/lsp-admin/mcserver stop
+ExecStart=/home/server/minecraft/mcserver st
+ExecStop=/home/server/minecraft/mcserver sp
 Restart=always
 RestartSec=15
 
