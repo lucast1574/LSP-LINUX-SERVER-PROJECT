@@ -172,7 +172,7 @@ wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm
 - Instalar y cambiar el archivo minecraft_server.jar
 
 ```bash
-chmod +x /serverfiles/minecraft_server.jar
+chmod +x serverfiles/minecraft_server.jar
 ```
 
 Verifica que tu version de Forge, Fabric, Arclight, Mohist, Paper Purpur o Otros sea estable antes ingresarla al servidor
