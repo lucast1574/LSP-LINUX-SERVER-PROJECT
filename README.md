@@ -50,12 +50,6 @@ source ~/.bashrc
 ```bash
 sudo apt install -y openjdk-21-jdk
 ```
-
-### Verificar
-
-```bash
-java -version
-```
 ### Configurar variable de entorno
 
 ```bash
@@ -64,6 +58,11 @@ echo 'export PATH=$PATH:$JAVA_HOME/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
 
+### Verificar
+
+```bash
+java -version
+```
 ### 3. Instalación de LinuxGSM y Minecraft Server
 
 ```bash
