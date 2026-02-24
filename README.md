@@ -84,7 +84,7 @@ sudo ufw allow 25565/tcp
 ```
 ### Ver consola del Servidor
 ```bash
-./mcserver stop
+./mcserver console
 ```
 ### Reinicio del Servidor
 ```bash
