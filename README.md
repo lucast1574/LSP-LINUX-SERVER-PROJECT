@@ -135,6 +135,25 @@ sudo systemctl enable playit
 ```bash
 sudo systemctl start playit
 ```
+
+```bash
+sudo systemctl daemon-reload
+```
+
+```bash
+sudo systemctl edit playit.service
+```
+[Service]
+Restart=always
+RestartSec=5
+StartLimitIntervalSec=0
+
+```bash
+screen -S playit_tunnel
+```
+```bash
+playit
+```
 ## Otra versiones
 
 - Regresar al paso antes de instalar
