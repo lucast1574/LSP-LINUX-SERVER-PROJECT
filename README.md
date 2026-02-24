@@ -207,8 +207,7 @@ chmod +x run.sh
 ```
 ## Iniciar el servidor
 ```bash
-./mcserver start
-./mcserver console
+./run.sh
 ```
 ## Verificar la version de Forge
 - Forge 1.20.1+ -> Java 17 o 21.
