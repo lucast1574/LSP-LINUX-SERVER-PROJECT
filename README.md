@@ -189,3 +189,52 @@ chmod +x run.sh
 - Forge 1.20.1+ -> Java 17 o 21.
 
 - Forge 1.12.2 -> Java 8.
+
+
+### AUTIO INICIO DEL SERVIDOR
+```bash
+sudo bash -c 'cat <<EOF > /etc/systemd/system/minecraft-watchdog.service
+[Unit]
+Description=Watchdog para Minecraft LinuxGSM (LSP)
+After=network.target
+
+[Service]
+# Asegúrate de que el User coincida con el que creaste (ej. lsp-admin)
+User=lsp-admin
+Group=lsp-admin
+WorkingDirectory=/home/lsp-admin
+Type=forking
+
+# Comandos específicos de LinuxGSM
+ExecStart=/home/lsp-admin/mcserver start
+ExecStop=/home/lsp-admin/mcserver stop
+Restart=always
+RestartSec=15
+
+[Install]
+WantedBy=multi-user.target
+EOF'
+```
+### Recargar los servicios de sistema
+```bash
+sudo systemctl daemon-reload
+```
+### Permitir el sistema
+```bash
+sudo systemctl enable minecraft-watchdog.service
+```
+### Iniciarlo
+```bash
+sudo systemctl start minecraft-watchdog.service
+```
+### Detenerlo
+```bash
+sudo systemctl stop minecraft-watchdog.service
+```
+### Verificarlo
+```bash
+sudo systemctl status minecraft-watchdog.service
+```
+
+
+By lucast1574
