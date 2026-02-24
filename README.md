@@ -143,16 +143,22 @@ sudo systemctl daemon-reload
 ```bash
 sudo systemctl edit playit.service
 ```
+```bash
 [Service]
 Restart=always
 RestartSec=5
 StartLimitIntervalSec=0
+```
 
 ```bash
 screen -S playit_tunnel
 ```
 ```bash
 playit
+```
+
+```bash
+sudo systemctl is-enabled playit
 ```
 ## Otra versiones
 
